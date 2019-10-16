@@ -1,9 +1,9 @@
 {
   "name": "matrixs",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "一个用于快速开发的UI组件库",
   "main": "lib/index.js",
-  "types": "lib/index.d.ts", 
+  "types": "lib/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
