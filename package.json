@@ -1,6 +1,6 @@
 {
   "name": "matrixs",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "一个用于快速开发的UI组件库",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
