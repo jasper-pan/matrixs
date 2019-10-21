@@ -3,17 +3,17 @@
     "sourceMap": true,
     "target": "es5",
     "module": "commonjs",
-    "declaration": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "outDir": "./lib",
     "strict": true,
     "lib": ["dom", "es2017"],
     "noImplicitAny": true,
+    "allowJs":true,
     "jsx": "react"
   },
   "include": [
-    "src"
+    "src/components"
   ],
   "exclude": [
     "node_modules",
