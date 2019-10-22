@@ -1,4 +1,11 @@
-import { Greeter } from '../components/greeter/index.tsx';
-test('My Greeter', () => {
-  expect(Greeter('Carl')).toBe('Hello Carl');
-});
+import React from 'react'
+ import { shallow, configure } from 'enzyme'
+import Adapter from 'enzyme-adapter-react-16'
+import App from '../components/app/index'
+
+configure({ adapter: new Adapter() })
+
+test('Jest-React-TypeScript 尝试运行', () => {
+  const renderer = shallow(<App></App>)
+  expect(renderer.text()).toEqual('hello world') // Pass
+})
