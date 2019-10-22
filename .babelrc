@@ -1,3 +1,16 @@
 {
-    "presets": ["env", "react", "stage-2"]
+    "presets": [
+        "env",
+        "react",
+        "stage-2"
+    ],
+    "plugins": [
+        [
+            "import",
+            {
+                "libraryName": "matrixs",
+                "style": true
+            }
+        ]
+    ]
 }

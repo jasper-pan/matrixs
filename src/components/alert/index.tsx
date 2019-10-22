@@ -1,12 +1,12 @@
 import * as React from 'react'
 import { useEffect, useState } from 'react'
-const App = (props:any) =>{
+const Alert = (props:any) =>{
   const [name,setName] =useState('hello world')
   useEffect(()=>{
     setName('ohahahah')
   },[])
   return (
-    <div className='mat-name'>{name}</div>
+    <div>{name}</div>
   )
 }
-export default App
+export default Alert
