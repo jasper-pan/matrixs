@@ -3,7 +3,7 @@ import { useState } from 'react'
 const App = (props:any) =>{
   const [name,setName] =useState('hello world')
   return (
-    <div>{name+name}</div>
+    <div>{name}</div>
   )
 }
 export default App
