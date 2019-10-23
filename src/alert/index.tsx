@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { useEffect, useState } from 'react'
-const Alert = (props:any) =>{
+const Alert = () =>{
   const [name,setName] =useState('hello world')
   useEffect(()=>{
     setName('ohahahah')

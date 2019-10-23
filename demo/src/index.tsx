@@ -1,6 +1,6 @@
 import * as React from 'react'
 import * as ReactDOM from "react-dom";
-import { App } from '../../src'
+import { Button } from '../../src'
  
  
-ReactDOM.render(<App />, document.getElementById('app'))
+ReactDOM.render(<Button offsetTop={ 'asdsadsad' } />, document.getElementById('app'))

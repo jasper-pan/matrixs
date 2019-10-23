@@ -1,22 +1,22 @@
 {
   "compilerOptions": {
     "sourceMap": true,
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
     "target": "es5",
     "module": "commonjs",
     "esModuleInterop": true,
-    // "declaration":true,
+    "declaration":true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
     "allowSyntheticDefaultImports": true,
-    "outDir": "./lib",
+    "moduleResolution": "node",
     "strict": true,
     "lib": ["es6","dom"],
     "noImplicitAny": true,
     "jsx": "react",
-    "allowJs": true
+    // "allowJs": true
   },
-  "include": [
-    "src",
-    "package.json",
-    "README.md"
-  ]
+  "exclude": ["node_modules", "lib", "es"]
 }
  

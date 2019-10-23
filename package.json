@@ -6,7 +6,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
-    "compile": "tsc",
+    "compile": "antd-tools run compile",
     "build": "webpack --mode production",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
@@ -95,6 +95,6 @@
     ]
   },
   "dependencies": {
-    
+    "@ant-design/tools": "^8.0.4"
   }
 }
