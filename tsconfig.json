@@ -4,21 +4,18 @@
     "target": "es5",
     "module": "commonjs",
     "esModuleInterop": true,
+    "declaration":true,
     "allowSyntheticDefaultImports": true,
     "outDir": "./lib",
     "strict": true,
-    "lib": ["dom", "es2017"],
+    "lib": ["es6","dom"],
     "noImplicitAny": true,
-    "allowJs":true,
-    "jsx": "react"
+    "jsx": "react",
   },
   "include": [
-    "src/components"
-  ],
-  "exclude": [
-    "node_modules",
-    "**/__tests__/*",
-    "lib",
-    "es"
+    "src",
+    "package.json",
+    "README.md"
   ]
 }
+ 

@@ -2,13 +2,15 @@ const webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const path = require('path')
+
 module.exports = {
+    mode: 'development',
     entry: {
-        main: './demo/src/index.tsx'
+        main: './src/index.tsx'
     },
     output: {
         filename: '[name].[hash].js',
-        path: path.resolve('./dist'),
+        path: path.resolve('./lib'),
     },
     devtool: "source-map",
     module: {
@@ -16,13 +18,13 @@ module.exports = {
             {
                 test: /\.tsx?$/,
                 include: [
-                    path.resolve(__dirname, 'src'),
-                    path.resolve(__dirname, 'demo')
+                    path.resolve(__dirname, 'src')
                 ],
                 use: [
                     {
                         loader: 'awesome-typescript-loader',
                     },
+
                 ],
             },
             {
@@ -63,8 +65,7 @@ module.exports = {
         new webpack.ProgressPlugin(),
         new CleanWebpackPlugin(),
         new HtmlWebPackPlugin({
-            template: path.join(__dirname, "./demo/index.html"),
-            filename: './index.html'
+            template: './index.html'
         }),
 
     ],

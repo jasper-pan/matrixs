@@ -1,6 +1,3 @@
-import * as React from 'react'
-import * as ReactDOM from "react-dom";
-import { App } from './components'
+export { default as App } from './app';
+export { default as Alert } from './alert';
  
- 
-ReactDOM.render(<App />, document.getElementById('app'))

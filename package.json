@@ -6,7 +6,8 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
-    "build": "tsc",
+    "compile": "tsc",
+    "build": "webpack --mode production",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
@@ -62,6 +63,8 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
     "jest-svg-transformer": "^1.0.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
     "node-sass": "^4.12.0",
     "prettier": "^1.18.2",
     "sass-loader": "^8.0.0",
@@ -90,6 +93,7 @@
     ]
   },
   "dependencies": {
+    "cross-env": "^6.0.3",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
   }
