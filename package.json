@@ -1,6 +1,6 @@
 {
   "name": "matrixs",
-  "version": "1.0.8",
+  "version": "1.0.11",
   "description": "一个用于快速开发的UI组件库",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -10,7 +10,7 @@
     "build": "webpack --mode production",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
-    "prepare": "npm run build",
+    "prepare": "npm run compile",
     "prepublishOnly": "npm run test && npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
@@ -78,7 +78,9 @@
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.2",
-    "webpack-merge": "^4.2.2"
+    "webpack-merge": "^4.2.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
   },
   "files": [
     "dist",
@@ -93,8 +95,6 @@
     ]
   },
   "dependencies": {
-    "cross-env": "^6.0.3",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2"
+    
   }
 }

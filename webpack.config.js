@@ -28,7 +28,8 @@ module.exports = {
             {
                 test: /\.js$/,
                 include: [
-                    path.resolve(__dirname, 'src')
+                    path.resolve(__dirname, 'src'),
+                    path.resolve(__dirname, 'demo')
                 ],
                 use: [
                     {
