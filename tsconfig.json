@@ -1,8 +1,6 @@
-  
 {
   "compilerOptions": {
     "sourceMap": true,
-    "strictNullChecks": true,
     "experimentalDecorators": true,
     "target": "es5",
     "module": "commonjs",
@@ -12,7 +10,6 @@
     "noUnusedLocals": true,
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
-    "strict": true,
     "lib": ["es6","dom"],
     "noImplicitAny": true,
     "jsx": "react"

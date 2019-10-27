@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { useEffect, useState } from 'react';
-import './style'
 export interface ButtonProps {
   /**
    * 距离窗口顶部达到指定偏移量后触发
@@ -12,12 +11,12 @@ export interface ButtonProps {
   style?: React.CSSProperties;
  }
 
- const Button = (props:ButtonProps) =>{
+ const Button = (props: ButtonProps) => {
   const offsetTop = props.offsetTop as string;
-  const [name,setName] =useState('hello world')
-  useEffect(()=>{
+  const [name, setName] = useState('hello world')
+  useEffect(() => {
     setName(offsetTop)
-  },[])
+  }, [])
   return (
     <div className='mat-name'>
       <button className='mat-btn'>
@@ -26,4 +25,4 @@ export interface ButtonProps {
     </div>
   )
 }
-export default Button
+export default Button;
