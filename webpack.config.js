@@ -16,7 +16,7 @@ module.exports = {
             {
                 test: /\.tsx?$/,
                 include: [
-                    path.resolve(__dirname, 'src'),
+                    path.resolve(__dirname, 'components'),
                     path.resolve(__dirname, 'demo')
                 ],
                 use: [
@@ -28,7 +28,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 include: [
-                    path.resolve(__dirname, 'src'),
+                    path.resolve(__dirname, 'components'),
                     path.resolve(__dirname, 'demo')
                 ],
                 use: [
