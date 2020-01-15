@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { useEffect, useState } from 'react';
-export interface ButtonProps {
+export interface IButtonProps {
   /**
    * 距离窗口顶部达到指定偏移量后触发
    */
@@ -11,7 +11,7 @@ export interface ButtonProps {
   style?: React.CSSProperties;
  }
 
- const Button = (props: ButtonProps) => {
+ const Button = (props: IButtonProps) => {
   const offsetTop = props.offsetTop as string;
   const [name, setName] = useState('hello world')
   useEffect(() => {

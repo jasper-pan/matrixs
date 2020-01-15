@@ -1,6 +1,6 @@
-import React from 'react';
-import { shallow, configure } from 'enzyme';
+import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
+import React from 'react';
 import Button from '../button/index';
 
 configure({ adapter: new Adapter() });
